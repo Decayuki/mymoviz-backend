@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 const fetch = require('node-fetch');
-require('dotenv').config();
 
 // récupére les films depuis TMDB
 router.get('/movies', async (req, res) => {
