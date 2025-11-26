@@ -1,5 +1,6 @@
 const app = require('../app');
 
-// Export pour Vercel serverless functions
-module.exports = app;
-
+// Export handler pour Vercel serverless functions
+module.exports = (req, res) => {
+  return app(req, res);
+};
